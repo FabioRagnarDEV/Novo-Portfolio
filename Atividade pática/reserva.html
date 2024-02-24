@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de viagens</title>   
+</head>
+
+<body>
+    <h1>Viva o Sonho: Sua Viagem Inesquecível Começa Agora!</h1>
+    <p>Explore o extraordinário, descubra destinos incríveis e transforme seus sonhos em realidade. Junte-se a nós para
+        uma experiência única, feita sob medida para você. Comece sua jornada hoje e embarque na viagem dos seus sonhos.
+        Vamos tornar cada momento inesquecível. Sua aventura espera por você! 🌍✨</p>
+    <section>
+        <h2>Descubra Experiências Únicas: Explore Nossos Pacotes Especiais!</h2>
+        <p>Deixe-se envolver por aventuras feitas sob medida para você. Nossos pacotes oferecem momentos excepcionais,
+            levando-o a destinos incríveis. Descubra uma nova forma de viajar, repleta de exclusividade e conforto. Não
+            apenas pacotes, mas oportunidades de criar memórias inesquecíveis. Conheça o mundo através dos nossos
+            olhos.🌟✈️</p><br>
+    </section>
+
+    <section>
+        <h2>Faça seu orçamento e reserve já!</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Forneça os dados abaixo</legend>
+                <label>Nome</label><br>
+                <input type="text" name="nome" required><br>
+
+                <label>E-mail</label><br>
+                <input type="email" name="email" required><br>
+
+                <legend>Serviços desejados</legend>
+                <label>
+                    <input type="checkbox" name="compraDePassagens" value="compraDePassagens">Compra de Passagens
+                </label>
+
+                <label><br>
+                    <input type="checkbox" name="reservaDeHospedagem" value="reservaDeHospedagem">Reserva de Hospedagem
+                </label>
+
+                <label><br>
+                    <input type="checkbox" name="aluguelDeVeiculos" value="aluguelDeVeiculos">Aluguel de Veículos
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Pagamento</strong></legend>
+                <label>Formas de pagamento</label><br>
+                <label>
+                    <input type="radio" name="formaDePagamento" value="Cartão de crédito">Cartão de crédito
+                </label>
+                <label>
+                    <input type="radio" name="formaDePagamento" value="Boleto">Boleto
+                </label>
+                <label>
+                    <input type="radio" name="formaDePagamento" value="PIX">PIX
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Prazo de pagamento</legend>
+                <select name="PrazoDePagamento">
+                    <option value="a vista">A vista</option>
+                    <option value="5x sem juros" selected>5x sem juros</option>
+                    <option value="10x com juros">10x com juros</option>
+                </select>
+            </fieldset>
+
+            <label>Caso tenha dúvidas, enviar abaixo</label><br>
+            <textarea rows="5" name="DescricaoDuvida"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por Fabio França</p>
+    </footer>
+</body>
+</html>
